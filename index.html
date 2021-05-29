@@ -23,6 +23,10 @@
   </head>
 
 <body bgcolor = '#ffe6cc'>
+  {{ content }}
+  {% for page in site.pages %}
+    <a href={{ page.filename }}>{{ page.title }}</a>
+{% endfor %}
     <p class="under_construction">
       <b>Site under Construction. ETA unknown.</b>
       <img src="hello-fellas.png" alt="hello-fellas" style="width:304px;height:228px;">
